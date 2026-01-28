@@ -1,0 +1,9 @@
+[
+  {
+    "id" : "example.fhir.allowed-document-types",
+    "type" : "ImplementationGuide",
+    "url" : "http://example.org/fhir/ImplementationGuide/example.fhir.allowed-document-types",
+    "version" : "1.0.0",
+    "name" : "AllowedDocumentTypesIG"
+  }
+]

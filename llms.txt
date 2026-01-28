@@ -1,0 +1,14 @@
+# example.fhir.allowed-document-types#1.0.0: Allowed Document Types Operation
+
+## Pages
+
+* [Home](index.md)
+* [Operations](operations.md)
+* [Artifacts Summary](artifacts.md)
+* [CDS Hooks](hooks.md)
+
+## Resources
+
+### ImplementationGuides
+
+* [Allowed Document Types Operation](index.md)

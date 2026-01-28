@@ -1,0 +1,109 @@
+{
+  "date" : "Wed, 28 Jan, 2026 13:30:31 +0000",
+  "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
+  "files" : [
+    {
+      "name" : "/fsh-generated/resources/ImplementationGuide-example.fhir.allowed-document-types.json",
+      "size" : 2030,
+      "processes" : [
+        {
+          "activity" : "load",
+          "start" : 75,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 75,
+          "length" : 48
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 76,
+          "length" : 12
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 76,
+          "length" : 240
+        },
+        {
+          "activity" : "validate",
+          "start" : 76,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 76,
+          "length" : 3885
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 80,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 80,
+          "length" : 73
+        },
+        {
+          "activity" : "generate2",
+          "start" : 81,
+          "length" : 68
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 90,
+          "length" : 2
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 107,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "/fsh-generated/includes/menu.xml",
+      "size" : 1157
+    },
+    {
+      "name" : "/input/pagecontent/hooks.md",
+      "size" : 5972,
+      "processes" : [
+        {
+          "activity" : "generate2",
+          "start" : 81,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "/input/pagecontent/operations.md",
+      "size" : 1590
+    },
+    {
+      "name" : "/input/pagecontent/index.md",
+      "size" : 1432
+    },
+    {
+      "name" : "/template/config",
+      "size" : 0
+    },
+    {
+      "name" : "/template/config/_config.yml",
+      "size" : 140,
+      "processes" : [
+        {
+          "activity" : "generate2",
+          "start" : 81,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "/temp/pages/_includes/artifacts.xml",
+      "size" : 600
+    }
+  ]
+}

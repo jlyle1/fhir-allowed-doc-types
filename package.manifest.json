@@ -1,0 +1,6 @@
+{
+  "version" : "1.0.0",
+  "fhirVersion" : ["4.0.1"],
+  "date" : "20260128133031",
+  "name" : "example.fhir.allowed-document-types"
+}

@@ -1,0 +1,14 @@
+AllowedDocumentTypesIG
+=========================================
+
+Generic: line 0, col 0, Error - Supressed messages file not found (NOTFOUND)
+Generic: line 0, col 0, Error - The link 'Parameters-allowed-document-types-response-example.html' for "Example Response" cannot be resolved (NOTFOUND)
+Generic: line 0, col 0, Warning - The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide (NOTFOUND)
+Generic: line 0, col 0, Warning - An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide (NOTFOUND)
+Generic: line 0, col 0, Warning - An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide (NOTFOUND)
+Generic: line 0, col 0, Warning - The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide (NOTFOUND)
+/home/runner/work/fhir-allowed-doc-types/fhir-allowed-doc-types/fsh-generated/resources/ImplementationGuide-example.fhir.allowed-document-types.json: line 1, col 12901, Error - ImplementationGuide.definition.resource: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ImplementationGuide|4.0.1) (STRUCTURE)
+/home/runner/work/fhir-allowed-doc-types/fhir-allowed-doc-types/fsh-generated/resources/ImplementationGuide-example.fhir.allowed-document-types.json: line 1, col 2353, Warning - The ImplementationGuide uses package hl7.fhir.us.core#6.1.0 released on 2023-06-30, but the most recent appropriate version is 8.0.1. This reference is getting old and the more recent version should be considered (BUSINESSRULE)
+
+err = 2, warn = 5, info = 0
+IG Publisher Version: 2.0.30

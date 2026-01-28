@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>CDS Hooks - Allowed Document Types Operation v1.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"3"}
+    h3,h4,h5,h6{--heading-prefix:"3"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Allowed Document Types Operation</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="operations.html">Operations</a>
+  </li>
+  <li>
+    <a href="hooks.html">CDS Hooks</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>CDS Hooks</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Allowed Document Types Operation - Local Development build (v1.0.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://example.org/fhir/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>CDS Hooks</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#cds-hooks" id="markdown-toc-cds-hooks">CDS Hooks</a>    <ul>
+      <li><a href="#document-select-hook" id="markdown-toc-document-select-hook">document-select Hook</a>        <ul>
+          <li><a href="#workflow" id="markdown-toc-workflow">Workflow</a></li>
+          <li><a href="#hook-definition" id="markdown-toc-hook-definition">Hook Definition</a></li>
+          <li><a href="#context" id="markdown-toc-context">Context</a></li>
+          <li><a href="#example-request" id="markdown-toc-example-request">Example Request</a></li>
+          <li><a href="#example-response" id="markdown-toc-example-response">Example Response</a></li>
+          <li><a href="#integration-with-allowed-document-types" id="markdown-toc-integration-with-allowed-document-types">Integration with $allowed-document-types</a></li>
+        </ul>
+      </li>
+      <li><a href="#comparison-cds-hooks-vs-operation" id="markdown-toc-comparison-cds-hooks-vs-operation">Comparison: CDS Hooks vs Operation</a></li>
+    </ul>
+  </li>
+</ul>
+
+</div>
+<h1 id="cds-hooks">CDS Hooks</h1>
+
+<p>This Implementation Guide also supports a CDS Hooks approach for proactively presenting available document types during clinical workflows.</p>
+
+<h2 id="document-select-hook">document-select Hook</h2>
+
+<p>The <code class="language-plaintext highlighter-rouge">document-select</code> hook fires when an application (such as an AI Scribe) has prepared a clinical document and the user needs to select the appropriate document type before saving.</p>
+
+<h3 id="workflow">Workflow</h3>
+
+<ol>
+  <li>AI Scribe generates clinical documentation from an encounter</li>
+  <li>Application invokes <code class="language-plaintext highlighter-rouge">document-select</code> hook</li>
+  <li>CDS Service returns available document types as selectable suggestions</li>
+  <li>User selects the appropriate document type</li>
+  <li>Application creates the document with the selected type</li>
+</ol>
+
+<h3 id="hook-definition">Hook Definition</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>hook</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">document-select</code></td>
+    </tr>
+    <tr>
+      <td><strong>description</strong></td>
+      <td>Invoked when a user needs to select a document type for a newly created document</td>
+    </tr>
+    <tr>
+      <td><strong>workflow</strong></td>
+      <td>Documentation / Note Creation</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="context">Context</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Field</th>
+      <th>Optionality</th>
+      <th>Prefetch Token</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">userId</code></td>
+      <td>REQUIRED</td>
+      <td>Yes</td>
+      <td>string</td>
+      <td>Practitioner FHIR resource id (e.g., <code class="language-plaintext highlighter-rouge">Practitioner/123</code>)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">patientId</code></td>
+      <td>REQUIRED</td>
+      <td>Yes</td>
+      <td>string</td>
+      <td>Patient FHIR resource id</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">encounterId</code></td>
+      <td>OPTIONAL</td>
+      <td>Yes</td>
+      <td>string</td>
+      <td>Encounter FHIR resource id if applicable</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">locationId</code></td>
+      <td>OPTIONAL</td>
+      <td>Yes</td>
+      <td>string</td>
+      <td>Location FHIR resource id (clinic, ward)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">category</code></td>
+      <td>OPTIONAL</td>
+      <td>No</td>
+      <td>array</td>
+      <td>Array of Coding objects to filter by category</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="example-request">Example Request</h3>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"hookInstance"</span><span class="p">:</span><span class="w"> </span><span class="s2">"d1577c69-dfbe-44ad-ba6d-3e05e953b2ea"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"hook"</span><span class="p">:</span><span class="w"> </span><span class="s2">"document-select"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"context"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"userId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Practitioner/dr-smith"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"patientId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Patient/123"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"encounterId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Encounter/456"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"locationId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Location/ward-3b"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"prefetch"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"user"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Practitioner"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"dr-smith"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w"> </span><span class="nl">"text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Dr. Jane Smith"</span><span class="w"> </span><span class="p">}]</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<h3 id="example-response">Example Response</h3>
+
+<p>The CDS Service returns a card with selectable suggestions for each available document type:</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"cards"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"uuid"</span><span class="p">:</span><span class="w"> </span><span class="s2">"allowed-doc-types-card"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"summary"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Select document type"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"detail"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Choose the appropriate document type for this clinical note."</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"indicator"</span><span class="p">:</span><span class="w"> </span><span class="s2">"info"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"source"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"label"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Document Authorization Service"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://example.org/document-authz"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nl">"selectionBehavior"</span><span class="p">:</span><span class="w"> </span><span class="s2">"at-most-one"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"suggestions"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="nl">"label"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Progress Note"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"uuid"</span><span class="p">:</span><span class="w"> </span><span class="s2">"suggestion-progress-note"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"isRecommended"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"actions"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+              </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"create"</span><span class="p">,</span><span class="w">
+              </span><span class="nl">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Create Progress Note"</span><span class="p">,</span><span class="w">
+              </span><span class="nl">"resource"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"DocumentReference"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"current"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                  </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                    </span><span class="p">{</span><span class="w">
+                      </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://loinc.org"</span><span class="p">,</span><span class="w">
+                      </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"11506-3"</span><span class="p">,</span><span class="w">
+                      </span><span class="nl">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Progress note"</span><span class="w">
+                    </span><span class="p">}</span><span class="w">
+                  </span><span class="p">]</span><span class="w">
+                </span><span class="p">}</span><span class="w">
+              </span><span class="p">}</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+          </span><span class="p">]</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="nl">"label"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Discharge Summary"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"uuid"</span><span class="p">:</span><span class="w"> </span><span class="s2">"suggestion-discharge-summary"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"actions"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+              </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"create"</span><span class="p">,</span><span class="w">
+              </span><span class="nl">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Create Discharge Summary"</span><span class="p">,</span><span class="w">
+              </span><span class="nl">"resource"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"DocumentReference"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"current"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                  </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                    </span><span class="p">{</span><span class="w">
+                      </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://loinc.org"</span><span class="p">,</span><span class="w">
+                      </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"18842-5"</span><span class="p">,</span><span class="w">
+                      </span><span class="nl">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Discharge summary"</span><span class="w">
+                    </span><span class="p">}</span><span class="w">
+                  </span><span class="p">]</span><span class="w">
+                </span><span class="p">}</span><span class="w">
+              </span><span class="p">}</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+          </span><span class="p">]</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="nl">"label"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Consultation Note"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"uuid"</span><span class="p">:</span><span class="w"> </span><span class="s2">"suggestion-consult-note"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"actions"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+              </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"create"</span><span class="p">,</span><span class="w">
+              </span><span class="nl">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Create Consultation Note"</span><span class="p">,</span><span class="w">
+              </span><span class="nl">"resource"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"DocumentReference"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"current"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                  </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                    </span><span class="p">{</span><span class="w">
+                      </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://loinc.org"</span><span class="p">,</span><span class="w">
+                      </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"11488-4"</span><span class="p">,</span><span class="w">
+                      </span><span class="nl">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Consultation note"</span><span class="w">
+                    </span><span class="p">}</span><span class="w">
+                  </span><span class="p">]</span><span class="w">
+                </span><span class="p">}</span><span class="w">
+              </span><span class="p">}</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+          </span><span class="p">]</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">]</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<h3 id="integration-with-allowed-document-types">Integration with $allowed-document-types</h3>
+
+<p>The CDS Service implementing this hook may call the <a href="operations.html">$allowed-document-types</a> operation internally to determine available document types, then transform the response into CDS Hooks cards.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>┌─────────────┐    document-select    ┌─────────────┐    $allowed-document-types    ┌──────────┐
+│  AI Scribe  │ ───────────────────►  │ CDS Service │ ────────────────────────────► │   EHR    │
+│             │ ◄─────────────────    │             │ ◄────────────────────────────  │   FHIR   │
+└─────────────┘    cards/suggestions  └─────────────┘       Parameters              └──────────┘
+</code></pre></div></div>
+
+<h2 id="comparison-cds-hooks-vs-operation">Comparison: CDS Hooks vs Operation</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Approach</th>
+      <th>Best For</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>CDS Hooks</strong></td>
+      <td>Integrated EHR workflows where the hook is fired automatically</td>
+    </tr>
+    <tr>
+      <td><strong>$allowed-document-types</strong></td>
+      <td>Direct API queries, non-EHR clients, or when CDS Hooks infrastructure unavailable</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Both approaches return the same underlying authorization data; CDS Hooks simply wraps it in a user-facing presentation format.</p>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org">Your Organization</a>.  Package example.fhir.allowed-document-types#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jan 28, 2026 13:30+0000">2026-01-28</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+
