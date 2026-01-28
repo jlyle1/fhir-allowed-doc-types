@@ -1,0 +1,22 @@
+{
+  "resourceType": "Parameters",
+  "id": "allowed-document-types-request-example",
+  "meta": {
+    "profile": ["http://hl7.org/fhir/StructureDefinition/Parameters"]
+  },
+  "parameter": [
+    {
+      "name": "location",
+      "valueReference": {
+        "reference": "Location/primary-care-clinic-a",
+        "display": "Primary Care Clinic A"
+      }
+    },
+    {
+      "name": "encounter",
+      "valueReference": {
+        "reference": "Encounter/outpatient-visit-123"
+      }
+    }
+  ]
+}

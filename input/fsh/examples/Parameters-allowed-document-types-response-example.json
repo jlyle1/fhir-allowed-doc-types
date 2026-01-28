@@ -1,0 +1,125 @@
+{
+  "resourceType": "Parameters",
+  "id": "allowed-document-types-response-example",
+  "meta": {
+    "profile": ["http://hl7.org/fhir/StructureDefinition/Parameters"]
+  },
+  "parameter": [
+    {
+      "name": "documentType",
+      "part": [
+        {
+          "name": "code",
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "11506-3",
+            "display": "Progress note"
+          }
+        },
+        {
+          "name": "title",
+          "valueString": "Primary Care Progress Note"
+        },
+        {
+          "name": "templateId",
+          "valueString": "tiu-1234"
+        },
+        {
+          "name": "category",
+          "valueCoding": {
+            "system": "http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category",
+            "code": "clinical-note",
+            "display": "Clinical Note"
+          }
+        }
+      ]
+    },
+    {
+      "name": "documentType",
+      "part": [
+        {
+          "name": "code",
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "18842-5",
+            "display": "Discharge summary"
+          }
+        },
+        {
+          "name": "title",
+          "valueString": "Inpatient Discharge Summary"
+        },
+        {
+          "name": "templateId",
+          "valueString": "tiu-5678"
+        },
+        {
+          "name": "category",
+          "valueCoding": {
+            "system": "http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category",
+            "code": "clinical-note",
+            "display": "Clinical Note"
+          }
+        }
+      ]
+    },
+    {
+      "name": "documentType",
+      "part": [
+        {
+          "name": "code",
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "34117-2",
+            "display": "History and physical note"
+          }
+        },
+        {
+          "name": "title",
+          "valueString": "Admission H&P"
+        },
+        {
+          "name": "templateId",
+          "valueString": "tiu-9012"
+        },
+        {
+          "name": "category",
+          "valueCoding": {
+            "system": "http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category",
+            "code": "clinical-note",
+            "display": "Clinical Note"
+          }
+        }
+      ]
+    },
+    {
+      "name": "documentType",
+      "part": [
+        {
+          "name": "code",
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "28570-0",
+            "display": "Procedure note"
+          }
+        },
+        {
+          "name": "title",
+          "valueString": "Procedure Note"
+        },
+        {
+          "name": "templateId",
+          "valueString": "tiu-3456"
+        },
+        {
+          "name": "category",
+          "valueCoding": {
+            "system": "http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category",
+            "code": "clinical-note",
+            "display": "Clinical Note"
+          }
+        }
+      ]
+    }
+  ]
+}

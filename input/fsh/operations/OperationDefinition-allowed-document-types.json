@@ -1,0 +1,96 @@
+{
+  "resourceType": "OperationDefinition",
+  "id": "allowed-document-types",
+  "url": "http://example.org/fhir/OperationDefinition/allowed-document-types",
+  "version": "1.0.0",
+  "name": "AllowedDocumentTypes",
+  "title": "Allowed Document Types",
+  "status": "draft",
+  "kind": "operation",
+  "date": "2026-01-27",
+  "publisher": "Your Organization",
+  "description": "Returns the list of clinical document types the current user is authorized to create in the given context.",
+  "affectsState": false,
+  "code": "allowed-document-types",
+  "system": true,
+  "type": false,
+  "instance": false,
+  "parameter": [
+    {
+      "name": "user",
+      "use": "in",
+      "min": 0,
+      "max": "1",
+      "documentation": "Reference to the Practitioner. Defaults to current user from token.",
+      "type": "Reference",
+      "targetProfile": ["http://hl7.org/fhir/StructureDefinition/Practitioner"]
+    },
+    {
+      "name": "location",
+      "use": "in",
+      "min": 0,
+      "max": "1",
+      "documentation": "Reference to the Location context (e.g., clinic, ward).",
+      "type": "Reference",
+      "targetProfile": ["http://hl7.org/fhir/StructureDefinition/Location"]
+    },
+    {
+      "name": "encounter",
+      "use": "in",
+      "min": 0,
+      "max": "1",
+      "documentation": "Reference to the Encounter, if document is encounter-specific.",
+      "type": "Reference",
+      "targetProfile": ["http://hl7.org/fhir/StructureDefinition/Encounter"]
+    },
+    {
+      "name": "category",
+      "use": "in",
+      "min": 0,
+      "max": "*",
+      "documentation": "Filter by document category (e.g., clinical-note, discharge-summary).",
+      "type": "Coding"
+    },
+    {
+      "name": "documentType",
+      "use": "out",
+      "min": 0,
+      "max": "*",
+      "documentation": "A document type the user may create.",
+      "part": [
+        {
+          "name": "code",
+          "use": "out",
+          "min": 1,
+          "max": "1",
+          "documentation": "The document type code (typically LOINC).",
+          "type": "Coding"
+        },
+        {
+          "name": "title",
+          "use": "out",
+          "min": 1,
+          "max": "1",
+          "documentation": "Display title for the document type.",
+          "type": "string"
+        },
+        {
+          "name": "templateId",
+          "use": "out",
+          "min": 0,
+          "max": "1",
+          "documentation": "EHR-specific template identifier (e.g., TIU Definition IEN for VistA).",
+          "type": "string"
+        },
+        {
+          "name": "category",
+          "use": "out",
+          "min": 0,
+          "max": "*",
+          "documentation": "Categories this document type belongs to.",
+          "type": "Coding"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+# ╭─────────────────────────────────────────────────────────────────────────────╮
+# │                        SUSHI Configuration                                  │
+# ╰─────────────────────────────────────────────────────────────────────────────╯
+id: example.fhir.allowed-document-types
+canonical: http://example.org/fhir
+name: AllowedDocumentTypesIG
+title: Allowed Document Types Operation
+status: draft
+version: 1.0.0
+fhirVersion: 4.0.1
+copyrightYear: 2026+
+releaseLabel: ci-build
+publisher:
+  name: Your Organization
+  url: http://example.org
+
+description: >-
+  Defines a FHIR operation for retrieving the list of clinical document types
+  a user is authorized to create, supporting SMART on FHIR app launch scenarios
+  across multiple EHR platforms (VistA, Cerner/Oracle Health).
+
+dependencies:
+  hl7.fhir.us.core: 6.1.0
+
+pages:
+  index.md:
+    title: Home
+  operations.md:
+    title: Operations
+  hooks.md:
+    title: CDS Hooks
+
+menu:
+  Home: index.html
+  Operations: operations.html
+  CDS Hooks: hooks.html
+  Artifacts: artifacts.html
+
+parameters:
+  show-inherited-invariants: false
+  apply-jurisdiction: true
+  apply-publisher: true
