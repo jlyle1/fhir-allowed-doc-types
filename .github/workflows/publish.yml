@@ -5,6 +5,11 @@ on:
     branches: [main]
   workflow_dispatch:
 
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -21,6 +26,14 @@ jobs:
         with:
           node-version: '20'
 
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+
+      - name: Install Jekyll
+        run: gem install jekyll
+
       - name: Install SUSHI
         run: npm install -g fsh-sushi
 
@@ -30,7 +43,7 @@ jobs:
           curl -L https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -o input-cache/publisher.jar
 
       - name: Build IG
-        run: java -jar input-cache/publisher.jar -ig .
+        run: java -Xmx4g -jar input-cache/publisher.jar -ig .
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
